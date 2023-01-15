@@ -1,4 +1,4 @@
 @ECHO on
 .\update-git.bat
-cd fosscord\scripts\update
+cd sneedcord\scripts\update
 .\update-npm.bat

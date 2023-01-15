@@ -3,7 +3,7 @@ import json
 from config import auth
 
 config = {
-    "org_name": "fosscord",
+    "org_name": "sneedcord",
     "auth": auth
 }
 headers = {

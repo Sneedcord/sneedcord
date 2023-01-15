@@ -1,9 +1,9 @@
 #!/bin/sh
-cat fosscord.txt
+cat sneedcord.txt
 echo
 cat << EOF
 --------------------------------------
-Fosscord Open Source Contribution Setup
+sneedcord Open Source Contribution Setup
 strg+c/strg+d to exit
 -------------------------------------------
 This will clone and setup all repositories,
@@ -40,18 +40,18 @@ fi
 echo ✓ Dependencies are already installed
 echo -------------------------------
 echo Creating organization directory
-mkdir fosscord
-cd fosscord
+mkdir sneedcord
+cd sneedcord
 echo Cloning all repositories
 
 sh ../clone_all_repos.sh
-mv ../fosscord.code-workspace ./fosscord.code-workspace
+mv ../sneedcord.code-workspace ./sneedcord.code-workspace
 
 while true; do
    echo "Do you wish to launch the VSCode workspace?"
     read -p "[y/n]: " yn
     case $yn in
-        [Yy]* ) echo Opening VS Code Workspace ; code fosscord.code-workspace ; break;;
+        [Yy]* ) echo Opening VS Code Workspace ; code sneedcord.code-workspace ; break;;
         [Nn]* ) break;;
     esac
 done

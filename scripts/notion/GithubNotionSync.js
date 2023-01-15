@@ -71,7 +71,7 @@ class GithubNotionSync {
 	 * @returns array of issues for the given repo in the following json form:
 	 * ```
 	 * {
-	 *  url: 'https://api.github.com/repos/fosscord/fosscord-server/issues/78',
+	 *  url: 'https://api.github.com/repos/sneedcord/sneedcord-server/issues/78',
 	 *  title: '[Route] /guilds/:id/regions',
 	 *  body: '- [ ] regions',
 	 *  number: 78,
@@ -230,7 +230,7 @@ class GithubNotionSync {
 	}
 
 	static getRepoNameFromUrl(url) {
-		return url?.match(/fosscord\/(fosscord-)?([\w.-]+)/)[2];
+		return url?.match(/sneedcord\/(sneedcord-)?([\w.-]+)/)[2];
 	}
 }
 module.exports = { GithubNotionSync };

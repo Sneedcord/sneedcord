@@ -31,13 +31,13 @@ async function login() {
 			startTimestamp,
 			smallImageText: "flam3rboy",
 			largeImageKey: "logo2",
-			largeImageText: "Fosscord",
+			largeImageText: "Sneedcord",
 			instance: false,
 			buttons: [
 				{ label: "Discord", url: "https://discord.gg/ZrnGQP6p3d" },
 				{
 					label: "Website",
-					url: "https://fosscord.com",
+					url: "https://sneedcord.com",
 				},
 			],
 		});

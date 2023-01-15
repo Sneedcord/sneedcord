@@ -9,7 +9,7 @@ ECHO               \ \ \/   \ \ \_\ \ /\ \L\ \ /\ \L\ \\ \ \L\ \\ \ \_\ \\ \ \\ 
 ECHO                \ \_\    \ \_____\\ `\____\\ `\____\\ \____/ \ \_____\\ \_\ \_\\ \____/
 ECHO                 \/_/     \/_____/ \/_____/ \/_____/ \/___/   \/_____/ \/_/\/ / \/___/ 
 ECHO                                                                                       \n--------------------------------
-ECHO This will clone and setup all fosscord repositories,
+ECHO This will clone and setup all sneedcord repositories,
 ECHO if you only want to work on one specific repository
 ECHO follow their specific "Getting Started" Guide and exit this script
 ECHO.
@@ -43,27 +43,27 @@ echo Dependencies are already installed
 ECHO.
 echo Creating organization directory
 ECHO.
-MKDIR fosscord
-cd fosscord
+MKDIR sneedcord
+cd sneedcord
 ECHO Cloning all repositories
 ECHO.
-git clone https://github.com/fosscord/fosscord overview
-git clone https://github.com/fosscord/fosscord-server server
-git clone https://github.com/fosscord/fosscord-themes themes
-git clone https://github.com/fosscord/fosscord-plugins plugins
-git clone https://github.com/fosscord/fosscord-ui ui
-git clone https://github.com/fosscord/fosscord-client client
-git clone https://github.com/fosscord/fosscord-landingpage landingpage
-git clone https://github.com/fosscord/css-mediaquery css-mediaquery
-git clone https://github.com/fosscord/react-native-withcss react-native-withcss
+git clone https://github.com/sneedcord/sneedcord overview
+git clone https://github.com/sneedcord/sneedcord-server server
+git clone https://github.com/sneedcord/sneedcord-themes themes
+git clone https://github.com/sneedcord/sneedcord-plugins plugins
+git clone https://github.com/sneedcord/sneedcord-ui ui
+git clone https://github.com/sneedcord/sneedcord-client client
+git clone https://github.com/sneedcord/sneedcord-landingpage landingpage
+git clone https://github.com/sneedcord/css-mediaquery css-mediaquery
+git clone https://github.com/sneedcord/react-native-withcss react-native-withcss
 
-echo {"folders":[{"path":"overview"},{"path":"cdn"},{"path":"api"},{"path":"gateway"},{"path":"media"},{"path":"server-util"},{"path":"ui"},{"path":"client"},{"path":"plugins"},{"path":"themes"},{"path":"landingpage"},{"path":"dashboard"},{"path":"support"},{"path":"css-mediaquery"},{"path":"react-native-withcss"}]}> fosscord.code-workspace
+echo {"folders":[{"path":"overview"},{"path":"cdn"},{"path":"api"},{"path":"gateway"},{"path":"media"},{"path":"server-util"},{"path":"ui"},{"path":"client"},{"path":"plugins"},{"path":"themes"},{"path":"landingpage"},{"path":"dashboard"},{"path":"support"},{"path":"css-mediaquery"},{"path":"react-native-withcss"}]}> sneedcord.code-workspace
 
 IF ERRORLEVEL 0 (
 	CHOICE /c yn /m "Do you want to launch the VS Code workspace?"
 	IF %ERRORLEVEL% == 2 GOTO :rpc
 	ECHO Opening VS Code Workspace
-	code fosscord.code-workspace
+	code sneedcord.code-workspace
 )
 
 :rpc

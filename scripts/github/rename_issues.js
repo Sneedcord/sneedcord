@@ -1,7 +1,7 @@
 const { token } = require("./config.json");
 const fetch = require("node-fetch");
 const base = "https://api.github.com";
-const organization = "fosscord";
+const organization = "sneedcord";
 
 const request = async (path, opts = {}) =>
 	await fetch(`${base}${path}`, {
@@ -18,7 +18,7 @@ async function getRepos() {
 
 async function main() {
 	// const repos = await getRepos();
-	const repos = ["fosscord-gateway"];
+	const repos = ["sneedcord-gateway"];
 
 	for (const repo of repos) {
 		var page = 1;
